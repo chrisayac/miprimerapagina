@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Encode Sans", sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(147, 147, 211);
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.1em;
+}
+
+header a i {
+    color: white;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+header nav ul li {
+    color: white;
+}
+
+.imagen1 {
+    width: 300px;
+    height: 300px;  
+}
+
+.imagen2 {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(147, 147, 211);
+    padding: 25px;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.seccion1 {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    align-items: center;
+}
+
+div .seccion3 {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin: 5em;
+    padding: 8em;
+}
+
+.imagen3, .imagen4 {
+    width: 350px;
+    height: 350px; 
+    justify-content: center;
+}
+
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;  
+}
+
+@media (max-width:768px) {
+    header {
+        background-color: burlywood;
+    }
+
+    .acerca-de {
+        text-align: center;
+    }
+
+    .acerca-imag {
+        margin-bottom: 40px;
+    }
+    h2.fuente-acento {
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado {
+        position: fixed;
+        width: 100%;
+    }
+
+    #encabezado ul.menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+        
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: #2c3e50;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+    .menu {
+        padding: 0;
+        display: block;
+        margin-bottom: 150px;
+    }
+
+    .navbar .active {
+        height: 100vh;
+    }
+    
+    nav ul li {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 20px;
+    }
+}
+
